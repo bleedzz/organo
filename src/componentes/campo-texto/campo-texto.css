@@ -1,0 +1,40 @@
+.campo-texto {
+   
+    margin: 24px 0;
+
+}
+
+.campo-texto h1 {
+    
+
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+color: #212121;
+}
+
+.campo-texto input {
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px 10px;
+    box-sizing: border-box;
+}
+.campo-texto label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.campo-texto textarea {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}

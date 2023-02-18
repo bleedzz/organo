@@ -1,0 +1,25 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 ;
+}
+
+.formulario form {
+    max-width: 80%;
+    background: #f2f2f2;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 5em 25em;
+}
+
+.descricao {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.formulario textarea::placeholder {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
