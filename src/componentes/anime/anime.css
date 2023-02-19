@@ -1,10 +1,10 @@
-.role {
+.anime {
     text-align: center;
     padding: 32px;
 
 }
 
-.role h3 {
+.anime h3 {
     font-size: 32px;
     border-bottom: 4px solid;
     display: inline-block;
@@ -12,7 +12,7 @@
 
 }
 
-.role .cards {
+.anime .cards {
     display: flex;
     justify-content: space-around;
     margin-top: 32px;

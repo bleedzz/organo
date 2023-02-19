@@ -3,34 +3,35 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/formulario';
 import Rodape from './componentes/Rodape';
-import Role from './componentes/Role';
+import anime from './componentes/anime';
+import Anime from './componentes/anime';
 
 
 function App() {
 
-  const roles = [
+  const animes = [
     {
-      nome: 'Top',
+      nome: 'Bleach',
       corPrimaria: '#57c278',
       corSecundaria: '#d9f7e9'
     },
     {
-      nome: 'Jungler',
+      nome: 'Naruto',
       corPrimaria: '#82CFFA',
       corSecundaria: '#E8F8FF'
     },
     {
-      nome: 'Mid',
+      nome: 'FMAB',
       corPrimaria: '#A6D157',
       corSecundaria: '#F0F8E2'
     },
     {
-      nome: 'Adc',
+      nome: 'Demon Slayer',
       corPrimaria: '#E06B69',
       corSecundaria: '#FDE7E8'
     },
     {
-      nome: 'Sup',
+      nome: 'Attack on Titan',
       corPrimaria: '#DB6EBF',
       corSecundaria: '#FAE9F5'
     }
@@ -48,15 +49,14 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario roles={roles.map(role => role.nome)} aoCardCriado={card => aoCardAdcionado(card)} />
+      <Formulario animes={animes.map(anime => anime.nome)} aoCardCriado={card => aoCardAdcionado(card)} />
 
-      {roles.map(role => <Role
-        key={role.nome}
-        nome={role.nome}
-        corPrimaria={role.corPrimaria}
-        corSecundaria={role.corSecundaria}
-        cards={cards.filter(card => card.role == role.nome)}
-      />)}
+      {animes.map(anime => <Anime 
+       key={anime.nome}
+       nome={anime.nome}
+       corPrimaria={anime.corPrimaria}
+       corSecundaria={anime.corSecundaria}
+       cards={cards.filter(card => card.anime == anime.nome)}/>)}
       <Rodape/>
     </div>
   );

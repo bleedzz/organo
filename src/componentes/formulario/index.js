@@ -10,7 +10,7 @@ const Formulario = (props) => {
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
-    const [role, setRole] = useState('')
+    const [anime, setanime] = useState('')
 
     const Save = (event) => {
         event.preventDefault()
@@ -18,13 +18,13 @@ const Formulario = (props) => {
             nome,
             cargo,
             imagem,
-            role
+            anime
         }) 
 
         setNome('')
         setCargo('')
         setImagem('')
-        setRole('')
+        setanime('')
     }
 
 
@@ -32,11 +32,11 @@ const Formulario = (props) => {
     return (
         <section className='formulario'>
             <form onSubmit={Save}>
-                <h2>Preencha os dados para criar seu card</h2>
+                <h2>Preencha os dados para criar o card de personagem</h2>
                 <CampoTexto obrigatorio={true} label="Nome" placeholder="Digite seu nome" valor={nome} aoAlterado={valor => setNome(valor)}/>
-                <CampoTexto obrigatorio={true} label="Cargo" placeholder="Digite seu Cargo"  valor={cargo} aoAlterado={valor => setCargo(valor)}/>
+                <CampoTexto obrigatorio={true} label="Função" placeholder="Digite sua função"  valor={cargo} aoAlterado={valor => setCargo(valor)}/>
                 <CampoTexto label="Imagem" placeholder="Digite o endereço de sua imagem" valor={imagem} aoAlterado={valor => setImagem(valor)}/>
-                <ListaSuspensa  label="Role"  itens = {props.roles} valor={role} aoAlterado={valor => setRole(valor)}/>
+                <ListaSuspensa  label="Anime"  itens = {props.animes} valor={anime} aoAlterado={valor => setanime(valor)}/>
                  <Botao> Criar Card</Botao>
             </form>
 
