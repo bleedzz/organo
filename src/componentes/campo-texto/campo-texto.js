@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import './campo-texto.css'
 
 const CampoTexto = (props) => {
@@ -6,7 +6,6 @@ const CampoTexto = (props) => {
 
     //let valor = ''
 
-    const [valor, setValor] = useState('')
 
     const aoDigitado = (event) => {
        props.aoAlterado(event.target.value)

@@ -1,6 +1,6 @@
 .card {
     width: 280px;
-    
+    position: relative;
 }
 
 .card .cabecalho {
@@ -26,13 +26,19 @@
     color: #6278F7;
     font-size: 18px;
     line-height: 22px;
-    font-weight: bold;
+    font-style: italic;
     margin-bottom: 8px;
 }
 
 .card .rodape h5 {
     font-size: 18px;
     line-height: 22px;
-    color: #212121;
+    font-weight: normal;
     padding: 0 16px;
+}
+
+.deletar {
+    position: absolute;
+    right: -10px;
+    top: -10px;
 }
