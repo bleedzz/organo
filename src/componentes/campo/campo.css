@@ -1,10 +1,10 @@
-.campo-texto {
+.campo {
    
     margin: 24px 0;
 
 }
 
-.campo-texto h1 {
+.campo h1 {
     
 
 font-family: 'Prata';
@@ -18,7 +18,7 @@ align-items: center;
 color: #212121;
 }
 
-.campo-texto input {
+.campo input {
     background-color: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     width: 100%;
@@ -27,14 +27,19 @@ color: #212121;
     padding: 24px 10px;
     box-sizing: border-box;
 }
-.campo-texto label {
+.campo label {
     display: block;
     margin-bottom: 8px;
     font-size: 24px;
 }
 
-.campo-texto textarea {
+.campo textarea {
     display: block;
     margin-bottom: 8px;
     font-size: 24px;
+}
+
+.campo-color input {
+    height: 60px;
+    padding: 3px 24px;
 }
